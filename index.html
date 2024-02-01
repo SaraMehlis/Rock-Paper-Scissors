@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper Scissors</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 </head>
+
 <body>
-    <h1>Rock Paper Scissors</h1>
-  <div class="game-container">
-    <div class="choice-container">
-        <img src="assets/images/rock.png" alt="Rock">
-        <button class="choice-button" onclick="startGame('rock')">Rock</button>
-      </div>
-      <div class="choice-container">
-        <img src="assets/images/paper.png" alt="Paper">
-        <button class="choice-button" onclick="startGame('paper')">Paper</button>
-      </div>
-      <div class="choice-container">
-        <img src="assets/images/scissor.png" alt="Scissors">
-        <button class="choice-button" onclick="startGame('scissors')">Scissors</button>
-      </div>
-      <p id="result"></p>
-  </div>
-    <script src="assets/js/script.js"></script> 
+   
+        <div class="intro">
+            <h1>Rock Paper Scissors</h1>
+            <button>Let's Play</button>
+        </div>
+
+       
+            <section class="game">
+                <div class="score">
+                    <div class="player-score">
+                        <h2>Player</h2>
+                        <p>0</p>
+                    </div>
+                    <div class="computer-score">
+                        <h2>Computer</h2>
+                        <p>0</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="match">
+                <h2 class="winner">Choose an option</h2>
+                <div class="hands">
+                    <img class="player-hand" src="assets/images/rock.png" alt="rock">
+                    <img class="computer-hand" src="assets/images/rock.png" alt="rock">
+                </div>
+                <div class="options">
+                    <button class="rock">rock</button>
+                    <button class="paper">paper</button>
+                    <button class="scissors">scissors</button>
+                </div>
+            </div>
+
+           
+                <div id="game-rules">
+                    <img src="assets/images/game-rules.PNG" alt="game-rules">
+                </div>
+                <script src="assets/js/script.js"></script>
 </body>
+
 </html>
