@@ -10,7 +10,19 @@
 <body>
     <h1>Rock Paper Scissors</h1>
   <div class="game-container">
-    
+    <div class="choice-container">
+        <img src="assets/images/rock.png" alt="Rock">
+        <button class="choice-button" onclick="startGame('rock')">Rock</button>
+      </div>
+      <div class="choice-container">
+        <img src="assets/images/paper.png" alt="Paper">
+        <button class="choice-button" onclick="startGame('paper')">Paper</button>
+      </div>
+      <div class="choice-container">
+        <img src="assets/images/scissor.png" alt="Scissors">
+        <button class="choice-button" onclick="startGame('scissors')">Scissors</button>
+      </div>
+      <p id="result"></p>
   </div>
     <script src="assets/js/script.js"></script> 
 </body>
